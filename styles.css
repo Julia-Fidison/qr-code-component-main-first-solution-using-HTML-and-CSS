@@ -1,0 +1,82 @@
+/* import Font family from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Color use on th website*/
+:root {
+--White: hsl(0, 0%, 100%);
+--Lightgray: hsl(212, 45%, 89%);
+--Grayishblue: hsl(220, 15%, 55%);
+--Darkblue: hsl(218, 44%, 22%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--Lightgray);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--White);
+}
+img {
+    width: 95%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+article {
+    text-align: center;
+    margin: 0px 40px 40px 40px;
+}
+
+article h1 {
+    color: var(--Darkblue)
+}
+
+article p {
+    color: var(--Grayishblue);
+}
+
+/* Styling the footer of*/
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Media query for styling differents screen device */
+
+@media screen and (max-width:769px){
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .container {
+        width: 80%;
+    }
+}
+
